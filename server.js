@@ -5,8 +5,8 @@ var Strategy = require("passport-facebook").Strategy;
 
 passport.use(
     new Strategy({
-         clientID : "2785599424827206",
-         clientSecret : "20a3804746de6d64d3dd2aded1de131c",
+         clientID : "Your clientId",
+         clientSecret : "Your ClientSecret",
          callbackURL : 'http://localhost:3000/login/facebook/return'
     },function(accessToken,refreshToken,profile,cb){
         return cb(null,profile);
